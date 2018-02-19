@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F5FE"
+    android:orientation="vertical"
+    tools:context="com.example.android.udacity.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/udacity1" />
+
+
+    <TextView
+        style="@style/txt_style"
+        android:drawableLeft="@drawable/tele"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/phone" />
+
+
+    <TextView
+        style="@style/txt_style"
+        android:drawableLeft="@drawable/loc"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/adress1"
+
+        />
+
+
+    <TextView
+        style="@style/txt_style"
+        android:autoLink="web"
+        android:drawableLeft="@drawable/web"
+        android:fontFamily="sans-serif-condensed"
+        android:linksClickable="true"
+        android:text="@string/link" />
+</LinearLayout>
